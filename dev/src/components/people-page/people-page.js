@@ -6,8 +6,6 @@ import { PersonDetails } from '../sw-components';
 import Row from '../row';
 import ErrorBoundry from '../error-boundry';
 
-import './people-page.css';
-
 
 const PeoplePage = ( { history, match } ) => {
 

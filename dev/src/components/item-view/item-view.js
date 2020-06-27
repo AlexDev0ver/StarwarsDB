@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import './item-view.css';
-
 
 export default class ItemView extends Component {
 

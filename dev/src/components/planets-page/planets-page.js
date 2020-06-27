@@ -6,8 +6,6 @@ import { PlanetDetails } from '../sw-components';
 import Row from '../row';
 import ErrorBoundry from '../error-boundry';
 
-import './planets-page.css';
-
 
 const PlanetsPage = ( { history, match } ) => {
 

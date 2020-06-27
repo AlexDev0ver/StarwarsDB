@@ -6,8 +6,6 @@ import { StarshipDetails } from '../sw-components';
 import Row from '../row';
 import ErrorBoundry from '../error-boundry';
 
-import './starships-page.css';
-
 
 const StarshipsPage = ( { history, match } ) => {
 

@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "prop-types": "^15.7.2",
-    "proxy": "http://swapi.com",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^5.0.0",
