@@ -1,0 +1,35 @@
+.item-list .list-group-item {
+	cursor: pointer;
+}
+
+.item-list .list-group-item:hover {
+	background-color: #444;
+}
+
+.lds-double-ring {
+	position: relative;
+	left: 10rem;
+}
+
+
+.pages {
+	position: relative;
+	left: 45%;
+}
+
+.nextItems, .prevItems, .numPage {
+	display: inline;
+	max-width: 2rem;
+	color: white;
+}
+
+.nextItems, .prevItems {
+	background-color: rgba(0,0,0,0);
+	border : none;
+}
+
+.numPage {
+	margin: 1rem;
+	position: relative;
+	text-align: center;
+}

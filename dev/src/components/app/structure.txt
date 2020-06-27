@@ -1,0 +1,85 @@
+/* App structure 
+
+<App>
+
+	<ErrorBoundry>
+
+		<Header/>
+
+		<RandomPlanet>
+
+			<ErrorIndicator />
+			<Spinner />
+			<PlanetView />
+
+		</RandomPlanet>
+
+		<ItemPage>
+
+			<ErrorBoundry>
+
+				<Row>
+
+				// now include only 1 list and 1 details component;
+				
+
+					< PersonList> = func <ItemLists>
+					
+						<ItemList />
+
+					</PersonList>
+
+					< PlanetList> = func <ItemLists>
+						
+						<ItemList />
+
+					</PlanetList>
+
+					< StarshipList> = func <ItemLists>
+
+						<ItemList />
+
+					</StarshipList>
+
+
+					< PersonDetails> = func <Details>
+
+						<ItemDetails>
+
+							<ItemView />
+
+						</ItemDetails>
+
+					</PersonDetails>
+
+					< PlanetDetails> = func <Details>
+
+						<ItemDetails>
+
+							<ItemView />
+
+						</ItemDetails>
+
+					</PlanetDetails>
+
+					< StarshipDetails> = func <Details>
+
+						<ItemDetails>
+
+							<ItemView />
+
+						</ItemDetails>
+
+					</StarshipDetails>
+
+				</Row>
+
+			</ErrorBoundry>
+
+		{/ItemPage}
+
+	</ErrorBoundry>
+
+</App>
+
+*/

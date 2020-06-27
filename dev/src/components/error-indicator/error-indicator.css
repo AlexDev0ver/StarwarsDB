@@ -1,0 +1,17 @@
+.error-indicator {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.error-indicator span {
+	width: 100%;
+	color: red;
+	text-align: center;
+}
+
+.error-indicator img {
+	margin: 1rem;
+	position: relative;
+	left: 45%;
+}
