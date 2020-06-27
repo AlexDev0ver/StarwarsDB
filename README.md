@@ -9,3 +9,6 @@ For now:
 + pages for items list (little work with API)
 + add search panel
 + add films directory
+
+Known issues:
+- search element and change-page elements visible on films page

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Spinner from '../spinner';
 import ErrorBoundry from '../error-boundry';
-import { Route } from 'react-router-dom'
+import { matchPath } from 'react-router-dom'
 
 
 const WithData = (View, getData, getTypeOfSearch) => {
@@ -91,6 +91,8 @@ const WithData = (View, getData, getTypeOfSearch) => {
 		}
 
 
+
+
 		render () {
 
 			const { data, loading } = this.state;
@@ -99,14 +101,15 @@ const WithData = (View, getData, getTypeOfSearch) => {
 				return <Spinner />
 			}
 
-			if (<Route path = '/films/' />) {	
 
-				return (
-					<ErrorBoundry>
-						<View {...this.props} data = { data } />
-					</ErrorBoundry>
-				)				
-			}
+			// if (<Route path = '/films/' />) {	
+			// 	console.log(<Route path = '/films/' />)
+			// 	return (
+			// 		<ErrorBoundry>
+			// 			<View {...this.props} data = { data } />
+			// 		</ErrorBoundry>
+			// 	)				
+			// }
 
 			return (
 				
@@ -117,13 +120,14 @@ const WithData = (View, getData, getTypeOfSearch) => {
 										  iconBack = {this.iconBack}
 										  prevPage = {() => this.prevPage()} 
 										  nextPage = {() => this.nextPage()} 
-										  numPage = {this.numPage}  />
+										  numPage = {this.numPage} 
+					/>
+
 					<input
 						className = 'searchPanel'
 						placeholder = {'Type to search here'}
 						onChange = { (e) => { this.searchItem(getTypeOfSearch, e.target.value )} }
 					/>
-
 				</ErrorBoundry>
 			)
 		}
